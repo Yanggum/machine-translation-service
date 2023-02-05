@@ -1,4 +1,5 @@
 import os
+import flask
 from flask import Flask, request, jsonify
 from translate import Translator
 from config import *
