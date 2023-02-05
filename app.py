@@ -38,4 +38,4 @@ from flask_cloudflared import run_with_cloudflared
 app = Flask(__name__)
 run_with_cloudflared(app)
 
-app.run(host="0.0.0.0", port=5001)
+app.run()
