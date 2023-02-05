@@ -1,6 +1,6 @@
 import os
-import flask
 from flask import Flask, request, jsonify
+from flask_cloudflared import run_with_cloudflared
 from translate import Translator
 from config import *
 
@@ -34,7 +34,6 @@ def get_prediction():
     translation = translator.translate(source, target, text)
     return jsonify({"output":translation})
 
-from flask_cloudflared import run_with_cloudflared
 app = Flask(__name__)
 run_with_cloudflared(app)
 
