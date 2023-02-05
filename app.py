@@ -36,4 +36,4 @@ def get_prediction():
 #app.run(host="0.0.0.0", port=5001)
 
 from flask_cloudflared import _run_cloudflared
-    cloudflare = _run_cloudflared(5001)
+cloudflare = _run_cloudflared(5001)
