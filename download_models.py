@@ -12,7 +12,7 @@ parser.add_argument(
 
 
 def download_language_model(source, target):
-    model = f"opus-mt-tc-big-{source}-{target}"
+    model = f"opus-mt-tc-big-{source}-{target}/blob/main"
     
     print(">>>Downloading data for %s to %s model..." % (source, target))
     os.makedirs(os.path.join("data", model))
