@@ -33,4 +33,7 @@ def get_prediction():
     translation = translator.translate(source, target, text)
     return jsonify({"output":translation})
 
-app.run(host="0.0.0.0", port=5001)
+#app.run(host="0.0.0.0", port=5001)
+
+from flask_cloudflared import _run_cloudflared
+    cloudflare = _run_cloudflared(5001)
