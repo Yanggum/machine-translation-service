@@ -2,3 +2,4 @@ transformers
 sentencepiece
 torch
 flask
+flask_cloudflared==0.0.10
